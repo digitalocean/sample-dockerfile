@@ -2,7 +2,7 @@ name: sample-dockerfile
 services:
 - dockerfile_path: Dockerfile.1stage
   github:
-    branch: main
+    branch: one-stage
     deploy_on_push: true
     repo: digitalocean/sample-dockerfile
   name: sample-dockerfile
