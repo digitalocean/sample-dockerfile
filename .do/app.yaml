@@ -1,6 +1,6 @@
 name: sample-dockerfile
 services:
-- dockerfile_path: Dockerfile.1stage
+- dockerfile_path: Dockerfile
   github:
     branch: one-stage
     deploy_on_push: true
