@@ -1,10 +1,7 @@
-FROM golang:1.12-alpine as builder
+FROM golang:1.12-alpine
 WORKDIR /app
 COPY . .
-RUN go build -mod=vendor -o bin/hello
-
-FROM alpine
+RUN go build -mod=vendor -o bin/hello && \
+	cp bin/hello /usr/local/bin/hello
 RUN apk --no-cache add ca-certificates
-WORKDIR /root/
-COPY --from=builder /app/bin/hello /usr/local/bin/
 CMD ["hello"]
