@@ -7,7 +7,7 @@ FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 COPY --from=builder /app/bin/hello /usr/local/bin/
 # COPY --from=builder /app/files /opt/files
-WORKDIR /workspace/
+# WORKDIR /workspace/
 COPY files /opt/files
-WORKDIR /root/
+# WORKDIR /root/
 CMD ["hello"]
