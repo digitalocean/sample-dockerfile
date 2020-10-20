@@ -6,3 +6,6 @@ services:
     deploy_on_push: true
     repo: digitalocean/sample-dockerfile
   name: sample-dockerfile
+  envs:
+  - key: HELLO
+    value: WORLD
