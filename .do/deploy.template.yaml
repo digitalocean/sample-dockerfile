@@ -2,8 +2,7 @@ spec:
   name: sample-dockerfile
   services:
   - dockerfile_path: Dockerfile
-    github:
+    git:
       branch: main
-      deploy_on_push: true
-      repo: digitalocean/sample-dockerfile
+      repo_clone_url: https://github.com/digitalocean/sample-dockerfile.git
     name: sample-dockerfile
