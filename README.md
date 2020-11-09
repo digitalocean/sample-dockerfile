@@ -18,7 +18,7 @@ After forking the repo, you should now be viewing this README in your own github
 
 ## Deploying the App ##
 
-Click this button to deploy the app to the DigitialOcean App Platform.
+Click this button to deploy the app to the DigitalOcean App Platform.
 
  [![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/digitalocean/sample-dockerfile/tree/main})
 
