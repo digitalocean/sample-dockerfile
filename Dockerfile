@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN go build -mod=vendor -o bin/hello
 
-FROM alpine:latest
+FROM alpine
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 COPY --from=builder /app/bin/hello /usr/local/bin/
