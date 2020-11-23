@@ -18,15 +18,9 @@ After forking the repo, you should now be viewing this README in your own github
 
 ## Deploying the App ##
 
-1. Visit https://cloud.digitalocean.com/apps (if you're not logged in, you may see an error message. Visit https://cloud.digitalocean.com/login directly and authenticate, then try again)
-1. Click "Launch App" or "Create App"
-1. Choose GitHub and authenticate with your GitHub credentials.
-1. Under Repository, choose this repository (e.g. `<your-org>/sample-dockerfile`)
-1. On the next two screens, leave all the defaults unchanged.
-1. Click "Launch App"
-1. You should see a "Building..." progress indicator. And you can click "Deployments"→"Details" to see more details of the build.
-1. It can currently take 5-6 minutes to build this app, so please be patient. Live build logs are coming soon to provide much more feedback during deployments.
-1. Once the build completes successfully, click the "Live App" link in the header and you should see your running application in a new tab
+Click this button to deploy the app to the DigitalOcean App Platform.
+
+ [![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/digitalocean/sample-dockerfile/tree/main)
 
 ## Making Changes to Your App ##
 
