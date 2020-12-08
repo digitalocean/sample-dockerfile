@@ -41,4 +41,4 @@ This will delete the app and destroy any underlying DigitalOcean resources
 
 ## Learn More about DigitalOcean App Platform ##
 
-You can learn more about the App Platform and how to manage and update your application at https://www.digitalocean.com/docs/apps/.
+You can learn more about the App Platform and how to manage and update your application at https://www.digitalocean.com/docs/app-platform/.
