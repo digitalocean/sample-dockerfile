@@ -21,4 +21,13 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 # Copy the binary from the builder stage and set it as the default command.
 COPY --from=builder /app/bin/hello /usr/local/bin/
+
+# You can set timezone for your container by setting TZ environment variable.
+# More details https://docs.digitalocean.com/products/app-platform/reference/dockerfile/#environment-variables
+# Default timezone is UTC
+ARG TZ
+
+# Set timezone as an environment variable for run-time
+ENV TZ=${TZ}
+
 CMD ["hello"]
