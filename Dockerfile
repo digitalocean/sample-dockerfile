@@ -24,6 +24,7 @@ COPY --from=builder /app/bin/hello /usr/local/bin/
 
 # You can set timezone for your container by setting TZ environment variable.
 # More details https://docs.digitalocean.com/products/app-platform/reference/dockerfile/#environment-variables
+# Default timezone is UTC
 ARG TZ
 
 # Set timezone as an environment variable for run-time
