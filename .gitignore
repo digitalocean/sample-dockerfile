@@ -1,0 +1,59 @@
+# Docker related
+.docker/
+docker-compose.override.yml
+docker-volumes/
+
+# Docker build context
+.dockerignore
+
+# Container data
+data/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+out/
+target/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE and editor folders
+.idea/
+.vscode/
+*.sublime-*
+.project
+.classpath
+.settings/
+
+# Cache and temp files
+.cache/
+.tmp/
+tmp/
+*.tmp
+
+# Testing
+coverage/
+.nyc_output/
