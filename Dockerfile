@@ -4,7 +4,7 @@
 
 # -- Stage 1 -- #
 # Compile the app.
-FROM golang:1.12-alpine as builder
+FROM golang:1.22-alpine as builder
 WORKDIR /app
 # The build context is set to the directory where the repo is cloned.
 # This will copy all files in the repo to /app inside the container.
@@ -15,7 +15,7 @@ RUN go build -mod=vendor -o bin/hello
 
 # -- Stage 2 -- #
 # Create the final environment with the compiled binary.
-FROM alpine
+FROM alpine:3.20
 # Install any required dependencies.
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
